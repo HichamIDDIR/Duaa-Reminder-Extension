@@ -62,13 +62,13 @@ chrome.runtime.onInstalled.addListener(() => {
   });
   
   chrome.alarms.create('phraseReminder', {
-    periodInMinutes: 20
+    periodInMinutes: 15
   });
 });
 
 chrome.runtime.onStartup.addListener(() => {
   chrome.alarms.create('phraseReminder', {
-    periodInMinutes: 20
+    periodInMinutes: 15
   });
 });
 
