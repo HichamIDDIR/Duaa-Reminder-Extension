@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    h3 {
+      color: #333;
+      margin-top: 0;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      margin: 5px 0; /* Adjusted margin */
+    }
+    button:hover {
+      background: #45a049;
+    }
+    #manageButton {
+      background: #3498db;
+    }
+    #manageButton:hover {
+      background: #2980b9;
+    }
+    .info {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    .status {
+      color: #4CAF50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h3>🕌 Dua Reminder</h3>
+  
+  <div class="info">
+    <p>📖 <strong>Current Dua:</strong> <span id="currentPosition">1</span> of <span id="phraseCount">0</span></p>
+    <p>⏰ <strong>Frequency:</strong> Every 20 minutes</p>
+    <p class="status">✅ Extension is running</p>
+  </div>
+  
+  <button id="testButton">Show Next Dua</button>
+  <button id="resetButton">Reset to First Dua</button>
+  <button id="manageButton">Manage Duas</button> <script src="popup.js"></script>
+</body>
+</html>

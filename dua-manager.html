@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Manage Duas</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+	margin: 20px auto;
+    }
+    h3 {
+      color: #333;
+      text-align: center;
+    }
+    #duaList {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    #duaList li {
+      background: white;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .remove-btn {
+      background: #e74c3c;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .remove-btn:hover {
+      background: #c0392b;
+    }
+    .input-group {
+      display: flex;
+      gap: 10px;
+    }
+    #newDuaInput {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #addDuaButton {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #addDuaButton:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h3>🕌 Manage Your Duas</h3>
+  
+  <div class="input-group">
+    <input type="text" id="newDuaInput" placeholder="Enter a new dua...">
+    <button id="addDuaButton">Add</button>
+  </div>
+  
+  <ul id="duaList">
+    </ul>
+  
+  <script src="dua-manager.js"></script>
+</body>
+</html>
